@@ -1,0 +1,57 @@
+body {
+    background: #ffffff;
+    color: #000000;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 20px;
+  }
+
+  code {
+    background: rgb(156, 207, 127);
+  }
+
+  a {
+    border-bottom: 1px solid #444444;
+    color: #4e3647;
+    text-decoration: none;
+  }
+
+  a:hover {
+    border-bottom: 0;
+  }
+
+  .content {
+    max-width: 73%;
+    line-height: 1.3;
+    margin: 5% auto;
+  }
+
+  /* Add a black background color to the top navigation */
+  .topnav {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+  }
+
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #1335ca;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: rgb(6, 19, 211);
+  }
+
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #1335ca;
+    color: rgb(252, 252, 252);
+  }
+  img {
+    border-radius: 50%;
+  }

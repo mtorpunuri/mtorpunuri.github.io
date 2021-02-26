@@ -10,8 +10,8 @@ body {
   }
 
   a {
-    border-bottom: 1px solid #444444;
-    color: #4e3647;
+    border-bottom: 1px solid #0004eb;
+    color: #3100e4;
     text-decoration: none;
   }
 
@@ -55,3 +55,6 @@ body {
   img {
     border-radius: 50%;
   }
+
+  .links a p {display:none;}
+  .links a:hover p {display:block;}

@@ -1,70 +1,91 @@
 body {
-    background: white;
-    color: #000000;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-size: 20px;
-  }
+    background-color: #f9fafb;
+    color: #333;
+    font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
 
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
-  code {
-    background: rgb(156, 207, 127);
-  }
-
-  a {
-    border-bottom: 1px solid #0004eb;
-    color: #3100e4;
-    text-decoration: none;
-  }
-
-/*   div.main-content {
+.topnav {
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
     display: flex;
-    flex-direction: column;
-  } */
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
 
-  a:hover {
-    border-bottom: 0;
-  }
-
-  .content {
-    max-width: 30%;
-    line-height: 1.3;
-    margin: auto;
-    
-  }
-
-  /* Add a black background color to the top navigation */
-  .topnav {
-    background-color: rgb(255, 255, 255);
-    overflow: hidden;
-  }
-
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    color: #1335ca;
-    text-align: center;
-    padding: 14px 16px;
+.topnav a {
+    color: #555;
+    padding: 10px 15px;
     text-decoration: none;
-    font-size: 17px;
-  }
+    font-weight: 500;
+}
 
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: rgb(6, 19, 211);
-  }
+.topnav a:hover, .topnav a.active {
+    color: #1335ca;
+    border-bottom: 2px solid #1335ca;
+}
 
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #1335ca;
-    color: rgb(252, 252, 252);
-  }
-  img {
+.headshot-image {
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    width: 250px;
-  }
+    object-fit: cover;
+    margin: 20px auto;
+    display: block;
+    border: 3px solid #1335ca;
+}
 
+h1 {
+    text-align: center;
+    color: #111;
+}
 
+a {
+    color: #1335ca;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
 
-  .links a p {display:none;}
-  .links a:hover p {display:block;}
+a:hover {
+    color: #000;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+.footer-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+iframe {
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .topnav {
+        flex-direction: column;
+    }
+
+    .topnav a {
+        margin-bottom: 5px;
+    }
+}

@@ -30,7 +30,7 @@ body {
     font-weight: 500;
 }
 
-.topnav a:hover,
+.topnav a:hover, 
 .topnav a.active {
     color: #1335ca;
     border-bottom: 2px solid #1335ca;
@@ -38,55 +38,4 @@ body {
 
 .headshot-image {
     width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 20px auto;
-    display: block;
-    border: 3px solid #1335ca;
-}
-
-h1 {
-    text-align: center;
-    color: #111;
-}
-
-a {
-    color: #1335ca;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #000;
-}
-
-ul {
-    list-style-type: disc;
-    padding-left: 40px;
-}
-
-.footer-links {
-    text-align: center;
-    margin-top: 20px;
-}
-
-iframe {
-    display: block;
-    margin: 20px auto;
-    border-radius: 8px;
-}
-
-@media (max-width: 600px) {
-    .container {
-        padding: 15px;
-    }
-
-    .topnav {
-        flex-direction: column;
-    }
-
-    .topnav a {
-        margin-bottom: 5px;
-    }
-}
+    height:

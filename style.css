@@ -97,3 +97,7 @@ body {
   border-radius: 12px;
   object-fit: cover;
 }
+
+input {
+    padding-top: 10px;
+}

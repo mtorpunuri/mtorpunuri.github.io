@@ -1,4 +1,5 @@
-<html lang="en"></html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,32 +9,44 @@
 <body>
   <main class="homepage-wrapper">
     <section class="intro-text">
-      <h1>Hi, I'm </h1>
+      <h1>Hi, I'm</h1>
       <h1 class="name-title">Megha</h1>
       <p>
         I'm the cofounder of <strong><a href='https://www.usewhimsy.com'>Whimsy</a></strong>,<br />
         a new way for event businesses to operate.
       </p>
       <p>
-        I firmly believe the strongest builders & leaders have a diverse set of passions. </p>
-        <p><em>In addition to Whimsy...</em></p>
-       <p>I am also a floral designer, and occassionally freelance with larger studios for weddings and events.</p> 
-       <p>I enjoy long-distance running and endurance cycling.</p> 
-       <p>I share insights, stories, and hot takes on my <a href="https://carbqueen.substack.com">Substack</a>.</p> 
-      <p class="wave-link">
-        Looking for Wave Floral?
-        <img src="arrow.png" class="arrow-icon" alt="Arrows icons created by Indygo - Flaticon" />
-
-        <a href="florals.html" class="wave-logo-wrapper">
-          <img src="wave-floral-logo.png" class="wave-logo-flower" alt="Wave Floral Logo" />
-        </a>
+        I firmly believe the strongest builders & leaders have a diverse set of passions.
       </p>
+      <p><em>In addition to Whimsy...</em></p>
+      <p>I am also a <a href="https://www.megha.us/florals">floral designer</a>, and occasionally freelance with larger studios for weddings and events.</p>
+      <p>I enjoy long-distance running and endurance cycling.</p>
+      <p>I share insights, stories, and hot takes on my <a href="https://carbqueen.substack.com">Substack</a>.</p>
+
+          </a>
+        </div>
+      </div>
     </section>
     <section class="headshot">
       <img src="website-headshot.jpg" alt="Headshot of Megha" class="headshot-img" />
     </section>
   </main>
+
+  <script>
+    const flowerOverlay = document.querySelector('.flower-overlay');
+    const logoContainer = document.querySelector('.wave-logo-container');
+
+    const spinOnScroll = () => {
+      const rect = logoContainer.getBoundingClientRect();
+      const inView = rect.top < window.innerHeight && rect.bottom >= 0;
+      if (inView) {
+        flowerOverlay.classList.add('spin');
+      } else {
+        flowerOverlay.classList.remove('spin');
+      }
+    };
+
+    window.addEventListener('scroll', spinOnScroll);
+  </script>
 </body>
 </html>
-
- 
